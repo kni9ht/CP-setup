@@ -8,7 +8,7 @@ It's my neo-vim Config file.
 1. Try to nagivate it
      :e $MYVIMRC
 
-2. goto and fallow the installation instructions
+2. goto and follow the installation instructions
      https://github.com/junegunn/vim-plug
 
 3. :source %
