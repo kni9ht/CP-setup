@@ -150,8 +150,8 @@ let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
 nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap template :-1read  /home/kni9ht/Documents/compititive programming/DataStructures-Algorithms/Library/Miscellanious/template.cpp<CR>
-nnoremap short :-1read  /home/kni9ht/Documents/compititive programming/DataStructures-Algorithms/Library/Miscellanious/template-short.cpp<CR>
+nnoremap template :-1read  /home/kni9ht/Library/Miscellanious/template.cpp<CR>
+nnoremap short :-1read  /home/kni9ht/Library/Miscellanious/template-short.cpp<CR>
 
 autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -std=c++11 -O2 -Wall % -o %:r && %:r <CR>
 " run code
