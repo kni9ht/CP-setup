@@ -133,6 +133,8 @@ set showmatch "highlights matching brackets
 set incsearch "search as characters are entered
 set hlsearch "highlights matching searches
 
+:set makeprg=g++\ %\ &&\ ./a.out
+
 "clears highlights
 nnoremap // :noh<return>
 " moves current line down or up
@@ -153,13 +155,13 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap template :-1read  /home/kni9ht/Library/Miscellanious/template.cpp<CR>
 nnoremap short :-1read  /home/kni9ht/Library/Miscellanious/template-short.cpp<CR>
 
-autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -std=c++11 -O2 -Wall % -o %:r && %:r <CR>
+"autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -std=c++11 -O2 -Wall % -o %:r && %:r <CR>
 " run code
-"augroup compileandrun
-"    autocmd!
-"    autocmd filetype python nnoremap <f5> :w <bar> :!python3 % <cr>
-"    autocmd filetype cpp nnoremap <f5> :w <bar> !g++ -std=c++11 % <cr> :vnew <bar> :te "a.exe" <cr><cr>
-"    autocmd filetype cpp nnoremap <f6> :vnew <bar> :te "a.exe" <cr>
-"    autocmd filetype c nnoremap <f5> :w <bar> !make %:r && ./%:r <cr>
-"   autocmd filetype java nnoremap <f5> :w <bar> !javac % && java %:r <cr>
-"augroup END
+augroup compileandrun
+    autocmd!
+    autocmd filetype python nnoremap <f5> :w <bar> :!python3 % <cr>
+    autocmd filetype cpp nnoremap <f5> :w <bar> !g++ -std=c++11 -O2 -Wall % <cr> :vnew <bar> :te "./a.out" <cr><cr>
+    autocmd filetype cpp nnoremap <f6> :vnew <bar> :te "a.exe" <cr>
+    autocmd filetype c nnoremap <f5> :w <bar> !make %:r && ./%:r <cr>
+   autocmd filetype java nnoremap <f5> :w <bar> !javac % && java %:r <cr>
+augroup END
