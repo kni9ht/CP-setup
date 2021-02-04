@@ -4,8 +4,6 @@ It's my neo-vim Config file.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install TODO.
-
 ```bash
 1. Try to nagivate it
      :e $MYVIMRC
