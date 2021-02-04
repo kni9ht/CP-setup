@@ -19,12 +19,13 @@ It's my neo-vim Config file.
 ## Usage
 
 ```python
-Ctrl+n for file manager(NerdTree)
-Ctrl+h for terminal shift Left
-Ctrl+l for terminal shift Right
-Ctrl+j for terminal shift Down
-Ctrl+k for terminal shift Up
-F5     for running code (c++) //if you want you can uncomment the last part for more compiling features.
+Ctrl+n         for file manager(NerdTree)
+Ctrl+h         for terminal shift Left
+Ctrl+l         for terminal shift Right
+Ctrl+j         for terminal shift Down
+Ctrl+k         for terminal shift Up
+F5             for Compile and Run
+template       for Loading your custom Template
 ```
 
 ## Contributing
